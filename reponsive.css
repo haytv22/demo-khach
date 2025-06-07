@@ -167,6 +167,9 @@
   .header{
     display: none;
   }
+  .table-right-menu_item{
+    font-size: 10px;
+  }
 }
 @media (min-width: 1025px) {
   

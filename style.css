@@ -741,3 +741,6 @@ body {
 .slide-item-header{
     margin-top: 60px;
 }
+.slide-item-header img{
+    width: 100vw;
+}

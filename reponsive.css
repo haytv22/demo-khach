@@ -171,12 +171,13 @@
     font-size: 10px;
   }
   .section3-control-item{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin-right: -35px;
+    margin-bottom: -20px;
   }
   .section3-control-item p{
-    font-size: 15px;
+    font-size: 12px;
   }
   .section3-content_sidel-monphai img{
     height: 420px;

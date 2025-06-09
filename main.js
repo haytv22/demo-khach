@@ -228,3 +228,19 @@ const menuMobile = document.querySelector('.mobile-container-menu');
 menuIcon.addEventListener('click', () => {
   menuMobile.style.display = menuMobile.style.display === 'flex' ? 'none' : 'flex';
 });
+
+
+const controlMonPhai = document.querySelectorAll('.section3-control-item');
+const sideMonPhai = document.querySelectorAll('.container-section3-content_sidel');
+
+controlMonPhai.forEach((control, index) => {
+  control.addEventListener('click', () => {
+    // Xóa active khỏi tất cả
+    sideMonPhai.forEach(i => i.classList.remove('active'));
+    controlMonPhai.forEach(i => i.classList.remove('active'));
+
+    // Thêm active cho phần tử được click và slide tương ứng
+    control.classList.add('active');
+    sideMonPhai[index].classList.add('active');
+  });
+});

@@ -170,6 +170,47 @@
   .table-right-menu_item{
     font-size: 10px;
   }
+  .section3-control-item{
+    width: 90px;
+    height: 90px;
+    margin-right: -35px;
+  }
+  .section3-control-item p{
+    font-size: 15px;
+  }
+  .section3-content_sidel-monphai img{
+    height: 420px;
+  }
+  .container-section3-content{
+    height: 420px;
+  }
+  .section1-table-boder_topLeft{
+    top: -27px;
+    left: -20px;
+    width: 250px;
+    height: 404px;
+  }
+  .section1-table-boder_topRight{
+    top: -27px;
+    right: -20px;
+    width: 250px;
+    height: 404px;
+  }
+  .section1-table-boder_bottomLeft{
+    bottom: -22px;
+    left: -25px;
+    width: 404px;
+    height:250px;
+  }
+  .section1-table-boder_bottomRight{
+    bottom: -22px;
+    right: -25px;
+    width: 404px;
+    height:250px;
+  }
+  .container-section3-_control{
+    left: 47%;
+  }
 }
 @media (min-width: 1025px) {
   

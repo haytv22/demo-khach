@@ -46,6 +46,28 @@ table {
 body {
   font-family: 'Roboto', sans-serif;
 }
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes leftToRight{
+    0% {
+        transform: translateX(-60%);
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
 .header-mobile{
     display: none;
 }
@@ -143,6 +165,7 @@ body {
 }
 .container{
      background-color: #d5c6b3;
+     overflow: hidden;
 }
 .container-section1{
     position: relative;
@@ -154,13 +177,62 @@ body {
 .section1-table-container{
     width: 1120px;
     padding: 24px;
-    background-image: url(./accset/bg_section1.png);
     background-size: 100% 100%; /* Ảnh sẽ phủ kín chiều dài và rộng của thẻ */
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     gap: 8px;
     margin-top: -130px;
+    background-color: #000000;
+    position: relative;
+}
+.section1-table-boder_topLeft{
+    background-image: url(./accset/4goc/4goc/top_left.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15px;
+    left: -25px;
+    width: 320px;
+    height: 474px;
+    z-index: 2;
+}
+.section1-table-boder_topRight{
+    background-image: url(./accset/4goc/4goc/top_right.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15px;
+    right: -25px;
+    width: 320px;
+    height: 474px;
+    z-index: 2;
+}
+.section1-table-boder_bottomLeft{
+    background-image: url(./accset/4goc/4goc/bottom_left.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -27px;
+    left: -15px;
+    width: 474px;
+    height: 320px;
+    z-index: 2;
+}
+.section1-table-boder_bottomRight{
+    background-image: url(./accset/4goc/4goc/buttom_right.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -27px;
+    right: -15px;
+    width: 474px;
+    height: 320px;
+    z-index: 2;
 }
 .section1-table-left{
     width: 45%;
@@ -588,13 +660,11 @@ body {
     margin: auto;
 }
 .container-section3-content{
-    background-image: url(./accset/Untitled-4.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 40.25%;
+    width: 98.9vw;
     margin-top: 20px;
+    height: 721px;
+    overflow: hidden;
+    position: relative;
 }
 .footer{
     background-image: url(./accset/bg_bottom.jpg);
@@ -743,4 +813,88 @@ body {
 }
 .slide-item-header img{
     width: 100vw;
+}
+.container-section3-content_sidel{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container-section3-content_sidel.active{
+    display: block;
+}
+.section3-content_sidel-monphai{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    animation: leftToRight 0.8s ease-in-out 0.8s forwards;
+}
+.section3-content_sidel-nhanvat{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    animation: leftToRight 0.8s ease-in-out 1.4s forwards;
+}
+.section3-content_sidel-background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    animation: rightToLeft 0.8s ease-in-out forwards;
+}
+.content_sidel-background-left img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.content_sidel-background-right {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.container-section3-_control{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    justify-content: center;
+    width: 100%;
+}
+.section3-control-item{
+    background-image: url(./accset/section3/icon_class.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;        
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+.section3-control-item.active{
+    background-image: url(./accset/section3/icon_class_active.png);
+}
+.section3-control-item p{
+    color: #b6a789;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }

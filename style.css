@@ -158,6 +158,9 @@ body {
 .header-item_hover-item a{
     width: 100%;
 }
+.header-item_hover-item:hover a{
+    color: #92201a;
+}
 .header-item_line{
     width: 2px;
     height: 15px;
@@ -239,6 +242,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    z-index: 3;
 }
 .section1-table-right {
     width: 55%;
@@ -248,6 +252,7 @@ body {
     align-items: center;
     min-height: 600px;
     box-sizing: border-box;
+    z-index: 3;
 }
 .table-left-item2{
     width: 100%;
@@ -379,6 +384,7 @@ body {
 }
 .left-item1-top_right-text-donate:hover{
     background-image: url(./accset/section1/btn_donate_hover.png);
+    filter: brightness(1.3) contrast(1.1);
 }
     
 .left-item1-top_right-text-donate a{
@@ -532,6 +538,7 @@ body {
     background-color: #d2d2d2;
     width: 100%;
     padding: 0 30px;
+    margin-top: -6px;
 }
 .table-right_xemthem a{
     display: inline-block;
@@ -540,10 +547,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    padding: 10px 15px;
+    padding: 5px 15px;
     font-size: 19px;
     float: inline-end;
-    margin-top: 4px;
 }
 .container-section2{
     margin-top: -100px;
@@ -685,7 +691,6 @@ body {
     position: fixed;
     top: 50%;
     transform: translatey(-50%);
-    left: 0;
     right: 0;
     z-index: 100;
     width: 142px; /* Chiều rộng của sticky */
@@ -702,7 +707,7 @@ body {
     background-repeat: no-repeat;
     transition: transform 0.3s ease-in-out;
 }
-.sticky-container.hidden{
+.sticky.hidden{
     transform: translateX(85%);
 }
 .sticky-button{
@@ -733,6 +738,10 @@ body {
     height: 80px;
     right: 23px;
     top: 20px;
+    cursor: pointer;
+}
+.sticky-item1:hover{
+    filter: brightness(1.3) contrast(1.1);
 }
 .sticky-item2{
     position: absolute;
@@ -747,12 +756,20 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.sticky-item2_button.top:hover{
+    filter: brightness(1.3) contrast(1.1);
 }
 .sticky-item2_button.bot{
     background-image: url(./accset/3.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.sticky-item2_button.bot:hover{
+    filter: brightness(1.3) contrast(1.1);
 }
 .sticky-item2_button{
     width: 81px;
@@ -786,6 +803,10 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.sticky-item3_button.top:hover{
+    filter: brightness(1.3) contrast(1.1);
 }
 .sticky-item3_button.mid{
     background-image: url(./accset/5.png);
@@ -794,12 +815,20 @@ body {
     background-repeat: no-repeat;
     width: 81px;
     height: 34px;
+    cursor: pointer;
+}
+.sticky-item3_button.mid:hover{
+    filter: brightness(1.3) contrast(1.1);
 }
 .sticky-item3_button.bot{
     background-image: url(./accset/6.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.sticky-item3_button.bot:hover{
+    filter: brightness(1.3) contrast(1.1);
 }
 .slide-item{
     opacity: 0.5;
@@ -810,6 +839,19 @@ body {
 }
 .slide-item-header{
     margin-top: 60px;
+    position: relative;
+}
+.slide-item-header_logo{
+    background-image: url(./accset/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 4%;
+    width: 200px;
+    height: 200px;
+
 }
 .slide-item-header img{
     width: 100vw;

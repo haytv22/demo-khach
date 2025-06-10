@@ -2,7 +2,7 @@
 
 const buttonHide = document.querySelector('.sticky-button');
 buttonHide.addEventListener('click', () => {
-    const sticky = document.querySelector('.sticky-container');
+    const sticky = document.querySelector('.sticky');
     const bntMuiTen = document.querySelector('.sticky-button');
     sticky.classList.toggle('hidden');
     bntMuiTen.classList.toggle('hidden');

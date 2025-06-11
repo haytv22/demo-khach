@@ -864,6 +864,15 @@ body {
 .slide-item-header{
     margin-top: 60px;
     position: relative;
+    width: 100vw;
+    height: 80vh;
+}
+.slide-item-header-container{
+    position: absolute;
+    top: 0;
+    width: 1120px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .slide-item-header_logo{
     background-image: url(./accset/logo.png);
@@ -871,8 +880,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 50px;
-    left: 30%;
+    top: -50%;
+    left: 0;
     width: 200px;
     height: 200px;
 }

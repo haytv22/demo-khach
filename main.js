@@ -10,10 +10,15 @@ buttonHide.addEventListener('click', () => {
 
 
 // Xử lý menu-active cho table-right-menu_item
-document.querySelectorAll('.table-right-menu_item').forEach(item => {
+const newsList = document.querySelectorAll('.news-list')
+document.querySelectorAll('.table-right-menu_item').forEach((item,index )=> {
     item.addEventListener('click', function () {
         document.querySelectorAll('.table-right-menu_item').forEach(i => i.classList.remove('menu-active'));
         this.classList.add('menu-active');
+        newsList.forEach((NL)=>{
+            NL.classList.remove('active');
+        })
+        newsList[index].classList.add('active');
     });
 });
 

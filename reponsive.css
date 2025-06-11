@@ -21,6 +21,9 @@
   .table-right_xemthem a{
     font-size: 16px;
   }
+  .table-right_xemthem{
+    padding: 0 30px;
+  }
   .news-item:nth-child(6){
     display: none;
   }

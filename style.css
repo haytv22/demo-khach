@@ -366,6 +366,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+    position: relative;
 }
 .left-item1-top_right-register:hover{
     background-image: url(./accset/section1/btn_register_hover.png);
@@ -373,8 +374,11 @@ body {
     
 .left-item1-top_right-register a{
     display: block;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 .left-item1-top_right-text-donate{
     padding-top: 27%;
@@ -383,6 +387,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+    position: relative;
 }
 .left-item1-top_right-text-donate:hover{
     background-image: url(./accset/section1/btn_donate_hover.png);
@@ -391,8 +396,11 @@ body {
     
 .left-item1-top_right-text-donate a{
     display: block;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .table-left-item1{
@@ -448,6 +456,14 @@ body {
     padding: 5px;
     gap: 10px;
     background-color: #d2d2d2;
+    position: relative;
+}
+.news-item a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .news-item img {
     width: 191px;
@@ -542,7 +558,7 @@ body {
 .table-right_xemthem{
     background-color: #d2d2d2;
     width: 100%;
-    padding: 0 30px;
+    padding: 8px 30px;
     margin-top: -6px;
 }
 .table-right_xemthem a{
@@ -701,6 +717,7 @@ body {
     width: 142px; /* Chiều rộng của sticky */
     height: 302px; /* Chiều cao của sticky */
     margin-left: auto;  /* đẩy sát phải nếu nằm trong flex/column */
+    transition: transform 0.3s ease-in-out;
 }
 .sticky-container{
     position: relative;
@@ -710,10 +727,9 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform 0.3s ease-in-out;
 }
 .sticky.hidden{
-    transform: translateX(85%);
+    transform: translateX(85%) translatey(-50%);
 }
 .sticky-button{
     position: absolute;
@@ -856,6 +872,9 @@ body {
     left: 4%;
     width: 200px;
     height: 200px;
+}
+.slide-item-header_logo:hover{
+    filter: brightness(1.3) contrast(1.1);
 }
 .slide-item-header_logo a{
     display: block;

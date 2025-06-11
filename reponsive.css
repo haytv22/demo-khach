@@ -45,7 +45,7 @@
   .section1-table-container{
     display: block;
     width: 95vw;
-    padding-top: 8%;
+    padding-top: 3%;
     margin-top: -55px;
   }
   .section1-table-left{
@@ -214,24 +214,28 @@
     left: -20px;
     width: 250px;
     height: 404px;
+    pointer-events: none;
   }
   .section1-table-boder_topRight{
     top: -27px;
     right: -20px;
     width: 250px;
     height: 404px;
+     pointer-events: none;
   }
   .section1-table-boder_bottomLeft{
     bottom: -22px;
     left: -25px;
     width: 404px;
     height:250px;
+     pointer-events: none;
   }
   .section1-table-boder_bottomRight{
     bottom: -22px;
     right: -25px;
     width: 404px;
     height:250px;
+     pointer-events: none;
   }
   .container-section3-_control{
     left: 47%;

@@ -365,6 +365,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .left-item1-top_right-register:hover{
     background-image: url(./accset/section1/btn_register_hover.png);
@@ -381,6 +382,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .left-item1-top_right-text-donate:hover{
     background-image: url(./accset/section1/btn_donate_hover.png);

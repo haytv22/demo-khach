@@ -423,6 +423,9 @@ body {
     color: #fff;
     font-weight: 600;
 }
+.item3-row-column a:hover{
+    color: #95211a;
+}
 .item3-row-column img{
     width: 40px;
     margin-right: 5px;

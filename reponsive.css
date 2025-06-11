@@ -1,3 +1,13 @@
+@media (max-width: 5500px) {
+  .slide-item-header_logo{
+    left: 41%;
+  }
+}
+@media (max-width: 1500px) {
+  .slide-item-header_logo{
+    left: 15%;
+  }
+}
 @media (max-width: 1120px){
   .section1-table-container {
         width: 885px;
@@ -28,7 +38,8 @@
     display: none;
   }
     .slide-item-header_logo{
-      top: 10%;
+      top: 0%;
+      left: 10%;
     }
   
 }
